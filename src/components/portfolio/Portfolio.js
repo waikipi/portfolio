@@ -1,7 +1,7 @@
 import React from 'react';
-import PortfolioBlock from "./PortfolioBlock";
+import PortfolioBlock from "./PortfolioBlock.js";
 import {Box, Grid} from "@mui/material";
-import {info} from "../../info/Info";
+import {info} from "../../info/Info.js";
 
 export default function Portfolio() {
     return (
