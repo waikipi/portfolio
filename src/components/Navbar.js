@@ -7,7 +7,7 @@ import {info} from "../info/Info.js";
 const links = [
     {
         name: 'Home',
-        to: '/',
+        to: '/portfolio',
         active: 'home'
     },
     {
@@ -17,14 +17,14 @@ const links = [
     },
     {
         name: 'Projects',
-        to: '/portfolio',
+        to: '/projects',
         active: 'portfolio'
     }
 ]
 
 export default function Navbar() {
     const location = useLocation()
-    const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
+    const [active, setActive] = useState(location.pathname === '/portfolio' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
         <Box component={'nav'} width={'100%'}>
